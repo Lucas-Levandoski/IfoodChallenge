@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/TesteServlets")
-public class TesteServlets extends HttpServlet {
+@WebServlet("/cadastro")
+public class Restaurant extends HttpServlet {
 	private static final long serialVersionUID = 1L;
      
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
