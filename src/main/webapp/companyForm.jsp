@@ -8,22 +8,29 @@
 <title>Sucesso!</title>
 </head>
 <body>
-	<div class="container">
-	<h1>Restaurante, preencha suas informacoes</h1>	
-	<div class="card">
-		<div class="card-body">
-			<form action="<%=request.getContextPath()%>/Register" method="post">
-				<div class="form-group row">
-					<label for="firstName" class="col-sm-2 col-form-label">First
-				      Name
-				    </label>
-				    <div class="col-sm-7">
-					    <input type="text" class="form-control" name="firstName" placeholder="Enter first name">
-				    </div>
-				    <button type="submit" class="btn btn-primary">Submit</button>
-				</div>
-			</form>
+<div class="container">
+	<h1>Cadastro Restaurante</h1>
+	<form action="produto" method="post">
+		<div class="form-group">
+			<label for="id-nome">Nome</label>
+			<input type="text" name="nome" id="id-nome" class="form-control">
 		</div>
-	</div>
+		<div class="form-group">
+			<label for="id-valor">Endereco</label>
+			<input type="text" name="valor" id="id-valor" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="id-quantidade">horario de funcionamento</label>
+			<input type="text" name="quantidade" id="id-quantidade" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="id-fabricacao"></label>
+			<input type="text" name="fabricacao" id="id-fabricacao" class="form-control">
+		</div>
+		<input type="submit" value="Salvar" class="btn btn-primary">
+	</form>
+</div>
 </body>
 </html>
+
+
